@@ -19,13 +19,14 @@ class _InsertPageState extends State<InsertPage> {
     'Belanja',
     'Lainnya',
   ];
-  final _formKey = GlobalKey<FormState>();
-  final _categoryCtr = TextEditingController();
-  final _descCtr = TextEditingController();
+
   final _amountCtr = TextEditingController();
-  String _type = 'income';
-  DateTime _selectedDate = DateTime.now();
+  final _categoryCtr = TextEditingController();
   final _dao = MoneyDao();
+  final _descCtr = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  DateTime _selectedDate = DateTime.now();
+  String _type = 'income';
 
   @override
   void dispose() {
